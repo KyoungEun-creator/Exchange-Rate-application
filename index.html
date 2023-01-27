@@ -10,31 +10,31 @@
 <body>
     <div class="exchange-box">      <!--from currency-->
         <div class="dropdown">
-            <button class="dropbtn" id="from-button">Dropdown</button>
+            <button class="dropbtn" id="from-button">Drop Down</button>
             <div class="dropdown-content" id="from-currency-list">
-                <a href="/">KRW</a>
-                <a href="/">EUR</a>
-                <a href="/">USD</a>
+                <a href="/" class="from-krw">KRW</a>
+                <a href="/" class="from-eur">EUR</a>
+                <a href="/" class="from-usd">USD</a>
             </div>
         </div>
         <div class="input-area">
-            <input type="number"> <!--숫자입력용-->
-            <div>달러</div> <!--숫자읽기용-->
+            <input type="number" id="from-input" onkeyup="convert()" /> <!--숫자입력용-->
+            <div class="from-read">유로</div> <!--숫자읽기용-->
         </div>
     </div>
     <h1>=</h1>
     <div class="exchange-box">      <!--to  currency-->
         <div class="dropdown">
-            <button class="dropbtn" id="to-button">Dropdown</button>
+            <button class="dropbtn" id="to-button">KRW</button>
             <div class="dropdown-content" id="to-currency-list">
-                <a href="/">KRW</a>
-                <a href="/">EUR</a>
-                <a href="/">USD</a>
+                <a href="/" class="to-krw">KRW</a>
+                <a href="/" class="to-eur">EUR</a>
+                <a href="/" class="to-usd">USD</a>
             </div>
         </div>
         <div class="input-area">
-            <input type="number"> <!--숫자입력용-->
-            <div>원</div> <!--숫자읽기용-->
+            <input type="number" id="to-input" /> <!--숫자입력용-->
+            <div class="to-read">원</div> <!--숫자읽기용-->
         </div>
     </div>
     <script src="main.js"></script>
